@@ -53,6 +53,19 @@ namespace ga
         real_type   fitness_;
     };
 
+
+    bool operator < ( const chromosome& lhs, const chromosome& rhs )
+    { return lhs.fitness() < rhs.fitness(); }
+
+    bool operator <= ( const chromosome& lhs, const chromosome& rhs )
+    { return lhs.fitness() <= rhs.fitness(); }
+
+    bool operator > ( const chromosome& lhs, const chromosome& rhs )
+    { return lhs.fitness() > rhs.fitness(); }
+
+    bool operator >= ( const chromosome& lhs, const chromosome& rhs )
+    { return lhs.fitness() >= rhs.fitness(); }
+
 }//namespace ga
 
 #endif//_CHROMOSOME_HPP_INCLUDED_SDOFI4OIUSFDLKJSFLKJCVMDKLJFSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSFSLKJSALKFJSKLJFDJDOIO

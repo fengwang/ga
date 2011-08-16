@@ -13,8 +13,8 @@ namespace ga
     {
         void operator()( integer_type& i1, integer_type& i2 ) const 
         {
-            const integer_type upper_mask = 0xAAAAAAAAAAAAAAAAUL;
-            const integer_type lower_mask = 0x5555555555555555UL;
+            const integer_type upper_mask = 0xAAAAAAAAAAAAAAAAULL;
+            const integer_type lower_mask = 0x5555555555555555ULL;
             const integer_type upper_i1 = upper_mask & i1;
             const integer_type upper_i2 = upper_mask & i2;
             const integer_type lower_i1 = lower_mask & i1;

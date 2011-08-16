@@ -30,8 +30,11 @@ namespace ga
         const_iterator end() const 
         { return p_.end(); }
 
-        population( const size_type n )
+        population( const size_type n=0 )
         { p_.resize( n ); }
+
+        void join( const value_type v )
+        { p_.push_back(v); }
 
         value_type 
         operator[]( const size_type n ) const
