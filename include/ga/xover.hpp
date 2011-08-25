@@ -1,10 +1,10 @@
 #ifndef _XOVER_HPP_INCLUDED_SDFILJLKJTINTOTHESONSDEOI8SDDFLKJVKJSDFKHWOIJFDLKJAOUIBLSLKDJSLKJXVLKLSKLKSDFJSDFJKLSDFJKLSDJ
 #define _XOVER_HPP_INCLUDED_SDFILJLKJTINTOTHESONSDEOI8SDDFLKJVKJSDFKHWOIJFDLKJAOUIBLSLKDJSLKJXVLKLSKLKSDFJSDFJKLSDFJKLSDJ
 
-#include <ga_config.hpp>
-#include <gene.hpp>
-#include <chromosome.hpp>
-#include <population.hpp>
+#include <ga/ga_config.hpp>
+#include <ga/gene.hpp>
+#include <ga/chromosome.hpp>
+#include <ga/population.hpp>
 
 namespace ga
 {

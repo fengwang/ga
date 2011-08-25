@@ -1,8 +1,8 @@
 #ifndef _POPULATION_HPP_INCLUDED_OSDFIJ489UFSDLKJSKLJALKJCVSIUOIU498FSDLIEROIULKJFSDLSKFJSLKFJNXVSJKHSDFOIU4ISDF984IUFOIU
 #define _POPULATION_HPP_INCLUDED_OSDFIJ489UFSDLKJSKLJALKJCVSIUOIU498FSDLIEROIULKJFSDLSKFJSLKFJNXVSJKHSDFOIU4ISDF984IUFOIU
 
-#include <ga_config.hpp>
-#include <chromosome.hpp>
+#include <ga/ga_config.hpp>
+#include <ga/chromosome.hpp>
 #include <vg.hpp>
 #include <vector>
 #include <cstddef>
@@ -33,7 +33,7 @@ namespace ga
         population( const size_type n=0 )
         { p_.resize( n ); }
 
-        void join( const value_type v )
+        void push_back( const value_type v )
         { p_.push_back(v); }
 
         value_type 
@@ -50,7 +50,8 @@ namespace ga
                 ch.resize(n);
         }
 
-        void set_gene_boundary( const size_type i, const real_type l, const real_type u )
+        //set ith gene lower boundary and upperboundary
+        void set_gene_boundary( const size_type i=0, const real_type l=0, const real_type u=1 )
         {
             assert( i < p_[0].size() );
             assert( l < u );

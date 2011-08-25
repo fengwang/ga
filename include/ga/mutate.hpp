@@ -1,9 +1,9 @@
 #ifndef _MUTATE_HPP_INCLUDED_SFODIJ438UISDFKLCVKLSJSLFKJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 #define _MUTATE_HPP_INCLUDED_SFODIJ438UISDFKLCVKLSJSLFKJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ
 
-#include <ga_config.hpp>
-#include <population.hpp>
-#include <gray.hpp>
+#include <ga/ga_config.hpp>
+#include <ga/population.hpp>
+#include <ga/gray.hpp>
 #include <vg.hpp>
 
 #include <cstddef>
